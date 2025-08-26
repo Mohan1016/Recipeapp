@@ -50,8 +50,6 @@
 //    }
 //}
 
-
-<<<<<<< HEAD
 //using RecipeApp.Data;
 //using Microsoft.EntityFrameworkCore;
 //using RecipeApp.Repositories;
@@ -87,7 +85,7 @@
 
 //            var app = builder.Build();
 
-//            // --- 🔹 Render Port Binding ---
+//            // ---  Render Port Binding ---
 //            var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 //            app.Urls.Add($"http://*:{port}");
 
@@ -107,7 +105,7 @@
 //        }
 //    }
 //}
-=======
+
 // using RecipeApp.Data;
 // using Microsoft.EntityFrameworkCore;
 // using RecipeApp.Repositories;
@@ -143,7 +141,7 @@
 
 //             var app = builder.Build();
 
-//             // --- 🔹 Render Port Binding ---
+//             // --- Render Port Binding ---
 //             var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 //             app.Urls.Add($"http://*:{port}");
 
@@ -163,7 +161,6 @@
 //         }
 //     }
 // }
->>>>>>> 4131e39060ffc8945522289b771999d58ddebe53
 
 
 using RecipeApp.Data;
