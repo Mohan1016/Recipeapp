@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: recipeapp-backend
+    env: docker
+    plan: free
+    buildCommand: |
+      curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh && \
+      bash dotnet-install.sh --channel 8.0 --install-dir $HOME/.dotnet && \
+      export PATH=$HOME/.dotnet:$PATH && \
+      dotnet publish RecipeApp.csproj -c Release -o out
+    startCommand: "dotnet out/RecipeApp.dll"
+    autoDeploy: true
